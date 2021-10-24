@@ -58,5 +58,10 @@ public class HDiffPatch : ModuleRules
 			PublicDefinitions.Add("HOTPATCHER_PLUGIN=1");
 			PublicDependencyModuleNames.Add("BinariesPatchFeature");
 		}
+		PublicDefinitions.AddRange(new string[]
+		{
+			"HAVE__SETMODE=0",
+			"HAVE_SETMODE=0"
+		});
 	}
 }
